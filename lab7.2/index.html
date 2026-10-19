@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7.2 - Tea Station</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>TEA STATION</h1>
+        <p>Discover the taste of tea</p>
+    </header>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#posts">Bài viết</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <!-- LAYOUT CSS GRID -->
+    <main class="layout" id="home">
+
+        <section class="content">
+            <h2 id="about">Giới thiệu</h2>
+
+            <p>
+                Chào mừng bạn đến với Tea Station.
+                Chúng tôi mang đến những loại trà thơm ngon,
+                chất lượng và tốt cho sức khỏe.
+            </p>
+
+            <img
+                class="hero-image"
+                src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1000"
+                alt="Tách trà">
+
+            <!-- VIDEO -->
+            <section class="feature">
+                <h2>Video giới thiệu</h2>
+
+                <iframe
+                    class="video"
+                    src="https://www.youtube-nocookie.com/embed/ScMzIvxBSi4"
+                    title="Video giới thiệu"
+                    allowfullscreen>
+                </iframe>
+            </section>
+
+            <!-- POST -->
+            <section class="feature" id="posts">
+                <h2>Bài viết</h2>
+
+                <article class="post">
+                    <h3>Khám phá thế giới trà</h3>
+
+                    <p>
+                        Trà mang đến hương vị thư giãn.
+                        Hãy thưởng thức một tách trà mỗi ngày
+                        để tận hưởng những phút giây bình yên.
+                    </p>
+
+                    <button id="likeButton" type="button">
+                        👍 Like (<span id="likeCount">0</span>)
+                    </button>
+
+                    <button id="shareButton" type="button">
+                        🔗 Share
+                    </button>
+
+                    <p id="shareMessage"></p>
+                </article>
+            </section>
+
+            <!-- COMMENT -->
+            <section class="feature">
+                <h2>Bình luận</h2>
+
+                <form id="commentForm">
+                    <input
+                        type="text"
+                        id="commentInput"
+                        placeholder="Nhập bình luận..."
+                        required>
+
+                    <button type="submit">Gửi</button>
+                </form>
+
+                <ul id="commentList"></ul>
+            </section>
+
+            <!-- SLIDESHOW -->
+            <section class="feature">
+                <h2>Slideshow ảnh trà</h2>
+
+                <div class="slideshow">
+                    <button id="prevButton" type="button">
+                        ❮
+                    </button>
+
+                    <img
+                        id="slideImage"
+                        src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1000"
+                        alt="Ảnh trà">
+
+                    <button id="nextButton" type="button">
+                        ❯
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <h2>Sản phẩm nổi bật</h2>
+
+            <div class="product">
+                <h3>Trà xanh</h3>
+                <p>Hương vị thanh mát.</p>
+            </div>
+
+            <div class="product">
+                <h3>Trà hoa cúc</h3>
+                <p>Hương thơm dịu nhẹ.</p>
+            </div>
+
+            <div class="product">
+                <h3>Trà đen</h3>
+                <p>Đậm vị, thơm ngon.</p>
+            </div>
+        </aside>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <p>© 2026 Tea Station</p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>

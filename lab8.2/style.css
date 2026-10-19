@@ -1,0 +1,116 @@
+
+/* LAB 8.2 - RESPONSIVE WEBSITE */
+
+/* 1. Ảnh và video không vượt quá chiều rộng phần nội dung */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+/* 2. Máy tính bảng */
+@media screen and (max-width: 992px) {
+    .layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding: 0 16px;
+    }
+
+    .content,
+    .sidebar {
+        padding: 18px;
+    }
+
+    .hero-image {
+        height: auto;
+    }
+}
+
+/* 3. Điện thoại */
+@media screen and (max-width: 700px) {
+    .layout {
+        grid-template-columns: 1fr;
+        margin: 15px auto;
+        padding: 0 12px;
+    }
+
+    .header {
+        padding: 25px 12px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .menu {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .content,
+    .sidebar {
+        padding: 15px;
+    }
+
+    .video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+
+    .slideshow {
+        gap: 5px;
+    }
+
+    .slideshow img {
+        height: 200px;
+    }
+
+    #commentForm {
+        flex-direction: column;
+    }
+
+    #commentInput {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+/* 4. Điện thoại màn hình nhỏ */
+@media screen and (max-width: 400px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .content,
+    .sidebar {
+        padding: 12px;
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
